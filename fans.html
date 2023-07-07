@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazhany</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/fans.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Match 1</a></li>
+            <li><a href="#">Match 2</a></li>
+            <li><a href="#">Match 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">News</a></li>
+        <li><a href="fans.html">Fans</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Admin</a></li>
+      </ul>
+    </nav>
+    <img src="images/logo.png" alt="logo" class="logo">
+  </header>
+
+  <main>
+    <h1>Звернення фанатів</h1>
+
+    <div class="comments">
+      <div id="comment-list"><!--comments--></div>
+      <form id="comment-form">
+        <textarea id="comment-input" placeholder="Написати звернення"></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="author">ZeroWaste project</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="scripts/fans.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

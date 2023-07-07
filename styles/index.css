@@ -1,0 +1,52 @@
+.team {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.history {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 400px;
+}
+
+.history-text {
+  width: 65%;
+}
+
+.history-photo {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-img{
+  max-height: 80%;
+  max-width: 100%;
+  height:fit-content;
+}
+
+.ball {
+  position: absolute;
+  top: 85%;
+  left: 55.5%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  background-image: url('../images/ball.png');
+  background-size: cover;
+  animation: roll 3s infinite linear;
+}
+
+@keyframes roll {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
