@@ -13,3 +13,7 @@ main{
   margin-top: 60px;
   flex-grow: 1;
 }
+
+li {
+  list-style: none;
+}

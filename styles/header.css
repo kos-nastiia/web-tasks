@@ -1,14 +1,9 @@
 header {
   background-color: #f7ecad;
   color: #000;
-  height: 60px;
 }
 
 .logo {
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
   animation: slideInRight 1s;
 }
 
@@ -22,7 +17,6 @@ header {
 }
 
 nav ul li a:hover {
-  background-color: #fcf2b6; 
   animation: increaseFont 0.3s ease forwards;
 }
 

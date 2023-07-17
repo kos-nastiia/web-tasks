@@ -9,31 +9,39 @@
   <link rel="stylesheet" type="text/css" href="styles/index.css"/>
   <link rel="stylesheet" type="text/css" href="styles/header.css"/>
   <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="navbar navbar-expand d-flex justify-content-between fixed-top">
+  <header class="navbar navbar-expand-sm d-flex justify-content-between fixed-top">
     <nav>
-      <ul class="navbar-nav">
-        <li class="nav-item mx-3"><a class="nav-link" href="#">Main</a></li>
-        <li class="dropdown nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Matches</a>
-          <ul class="dropdown-menu">
-            <li><a class="nav-link" href="#">Match 1</a></li>
-            <li><a class="nav-link" href="#">Match 2</a></li>
-            <li><a class="nav-link" href="#">Match 3</a></li>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3"><a class="nav-link" href="#">Main</a></li>
+            <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link mx-3" data-toggle="dropdown">Matches</a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="#">Match 1</a></li>
+                <li><a class="nav-link" href="#">Match 2</a></li>
+                <li><a class="nav-link" href="#">Match 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item mx-3"><a class="nav-link" href="fans.html">Fans</a></li>
+            <li class="nav-item mx-3"><a class="nav-link" href="#">Contacts</a></li>
+            <li class="nav-item mx-3"><a class="nav-link" href="#">Admin</a></li>
           </ul>
-        </li>
-        <li class="nav-item mx-3"><a class="nav-link" href="#">News</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="fans.html">Fans</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="#">Contacts</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="#">Admin</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
-    <img src="images/logo.png" alt="logo" class="logo me-3">
+    <img src="images/logo.png" alt="logo" class="logo me-3" width="62" height="50">
   </header>
 
   <main class="container-fluid">
@@ -42,9 +50,10 @@
     <div class="container my-5">
       <row>
         <div class="history col-12 d-flex align-items-center">
-          <div class="history-text col-8">
+          <div class="history-text">
             <h2>Історія клубу Барком Кажани</h2>
-            <p>&emsp;&emsp;Волейбольний клуб «Барком-Кажани» — волейбольний клуб з м. Львова, Україна. Заснований 2009
+            <p><img src="images/history.jpg" alt="logo" class="history-img img-fluid rightimg" width="300" >
+              &emsp;&emsp;Волейбольний клуб «Барком-Кажани» — волейбольний клуб з м. Львова, Україна. Заснований 2009
             року. Грав у Суперлізі України. Неодноразовий переможець першостей України, володар Кубка 
             та Суперкубка України. У сезоні 2022—2023 виступає в елітній польській Плюс Лізі. 
             <br>
@@ -65,22 +74,17 @@
             харківський «Локомотив» з рахунком 3:0. 
             </p>
           </div>
-          <div class="history-photo col-4 ms-3">
-            <img src="images/history.jpg" alt="logo" class="history-img img-fluid">
-          </div>
         </div>
       </row>
     </div>
 
     <div class="container">
       <row>
-        <div class="history last-win col-12 d-flex align-items-center">
-          <div class="history-photo col-4 me-3">
-            <img src="images/history.jpg" alt="logo" class="history-img img-fluid">
-          </div>
-          <div class="history-text col-8">
+        <div class="history last-win d-flex align-items-center">
+          <div class="history-text">
             <h2>Завершуємо сезон двома перемогами в Любіні</h2>
-            <p>&emsp;&emsp;У боротьбі за 13-е місце «Кажанам» протистояв місцевий волейбольний клуб «Купрум».
+            <p><img src="images/history.jpg" alt="logo" class="history-img img-fluid leftimg" width="300">
+              &emsp;&emsp;У боротьбі за 13-е місце «Кажанам» протистояв місцевий волейбольний клуб «Купрум».
             <br>
             &emsp;&emsp;У основній частині ПлюсЛіги «Барком-Кажани» поступилися у Любіні, тому у нас було 
             достатньо мотивації взяти реванш і успішно розпочати боротьбу за 13-те місце. Однак, 
