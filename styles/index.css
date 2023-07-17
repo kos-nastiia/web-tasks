@@ -1,10 +1,28 @@
-
 .rightimg {
   float: right;
-  margin: 0 7px 7px 7px; 
+  margin: 0 7px 7px 7px;
   }
 
 .leftimg{
   float:left;
   margin: 7px 7px 7px 0;
+}
+
+.leftimg:hover, .rightimg:hover{
+  animation: rotateImage 1s ease-in-out; 
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  33%{
+    transform: rotate(5deg);
+  }
+  66%{
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
